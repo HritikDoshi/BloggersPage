@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Bloggers </title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <!-- topHeader -->
+    <div class="topHeader" id="header">
+        <a class="" href="#" id="subscribe">Subscribe</a>
+        <span id="webHead">Bloggers</span>
+        <span id="groupedHeader">
+            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            <button id="signUp">Sign Up</button>
+        </span>
+    </div>
+
+    <!--      Navigation Bar     -->
+    <div class="topNav" id="topNav">
+        <a href="#" class="" id="">World</a>
+        <a href="#" class="" id="">Science</a>
+        <a href="#" class="" id="">Style</a>
+        <a href="#" class="" id="">Travel</a>
+        <a href="#" class="" id="">Technology</a>
+        <a href="#" class="" id="">Design</a>
+    </div>
+
+    <!--    Longer featured blog   -->
+    <div class="featuredBlog">
+        <h1>Mobile Phones</h1>
+        <p>
+            A mobile phone (or cellphone) is a portable telephone that can make and 
+            receive calls over a radio frequency link while the user is moving within a 
+            telephone service area, as opposed to a fixed-location phone (landline phone). 
+            <span id="more" style="display: none;">The radio frequency link establishes a 
+            connection to the switching systems of a mobile phone operator, which provides access to the public switched telephone 
+            network (PSTN). A handheld mobile radio telephone service was envisioned in the early stages of radio engineering. 
+            In 1917, Finnish inventor Eric Tigerstedt filed a patent for a "pocket-size folding telephone with a very thin carbon 
+            microphone". Early predecessors of cellular phones included analog radio communications from ships and trains. 
+            The race to create truly portable telephone devices began after World War II, with developments taking place in many countries. 
+            The advances in mobile telephony have been traced in successive "generations", starting with the early zeroth-generation (0G) 
+            services, such as Bell System's Mobile Telephone Service and its successor, the Improved Mobile Telephone Service. These 0G systems 
+            were not cellular, supported few simultaneous calls, and were very expensive. </span>
+        </p>
+        <button onclick="myFunction()" id="continue">Continue Reading..</button>
+    </div>
+
+    <!--    Horizontal Cards    -->
+    <div class="cardsMultiple">
+        <div class="cards">
+
+            <!--   For data   -->
+            <div class="forData">
+                <h3 id="cardGenre">Genre 1</h3>
+                <h1 id="cardTitle">Title</h1>
+                <h3 class="authorDetails" id="cardPublish">Author and date</h3>
+                <p id="cardContent">Content</p>
+                <p class="cardContinueParent">
+                    <a href="#" class="cardContinue">Continue reading..</a>
+                </p>
+            </div>
+    
+            <!--   For image  -->
+            <div class="forImage">
+                <img src="./Images/Thumbnail.png" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="cards">
+    
+            <!--   For data   -->
+            <div class="forData">
+                <h3 id="cardGenre1">Genre2</h3>
+                <h1 id="cardTitle1">Title</h1>
+                <h3 class="authorDetails" id="cardPublish1">Author and date</h3>
+                <p id="cardContent1">Content</p>
+                <p class="cardContinueParent">
+                    <a href="#" class="cardContinue">Continue reading..</a>
+                </p>
+            </div>
+    
+            <!--   For image  -->
+            <div class="forImage">
+                <img src="./Images/Thumbnail.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <!--   Main content   -->
+    <div class="mainContent">
+        <div class="blogArea">
+            <h1 id="blogHead">Example</h1>
+            <h3 class="authorDetails" id="blogAuthor">November 22, 2023 by Hritik Doshi</h3>
+            <p class="contentArea" id="blogContent">
+                This is only for show purpose the content goes here. This is not a final woork, changes are being made
+                and I am currently working on this project. For more new features stay updated.
+            </p>
+        </div>
+
+        <div class="rightArea">
+            <div class="about">
+                <h3>About</h3>
+                <p>The content here is only for sample purpose.</p>
+            </div>
+
+            <div class="archive">
+                <h3>Archive</h3>
+                <li> <a href="">March 2015 </a></li>
+                <li> <a href="">Jan 2016</a></li>
+                <li> <a href="">July 2023</a> </li>
+                <li> <a href="">June 2004</a> </li>
+            </div>
+
+            <div class="elseWhere">
+                <h3>Elsewhere</h3>
+                <li> <a href=""> Github </a> </li>
+                <li> <a href=""> Facebook </a> </li>
+                <li> <a href=""> Twitter </a> </li>
+            </div>
+
+            <div class="toAddBlog">
+                <button onclick="openForm()" id="createBlog">Create your blog</button>
+            </div>
+        </div>
+    </div>
+
+    <form action="" id="form">
+        <span id="closeBtn" onclick="closeBtn()">X</span>
+        <fieldset>
+            <div>
+                <label for="authorName">Author Name: </label>
+                <input type="text" id="authorName" placeholder="Full Name" required>
+            </div>
+
+            <div>
+                <label for="formTitle">Title: </label>
+                <input type="text" id="formTitle" placeholder="Blog Title" required> <br>
+            </div>
+
+            <div>
+                <label for="formContent">Content: </label>
+                <textarea name="Content" id="formContent" cols="150" rows="25" placeholder="Blog Content" required></textarea> <br>
+            </div>
+
+            <button type="button" onclick="submitBtn()">Submit</button>
+        </fieldset>
+    </form>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <p>Blog template build for education purpose by <a href="https://hritikdoshi-developer.netlify.app/" style="color:#236ea5;cursor: pointer;text-decoration:none;">Hritik Doshi</a></p>
+        <a href="#header" style="color:#236ea5;cursor: pointer;text-decoration:none;">Back to top</a>
+    </footer>
+
+    <!--  For continnue Reading  -->
+    <script>
+        function myFunction() {
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("continue");
+            
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Show Less"; 
+            moreText.style.display = "inline-block";
+          } else {
+            btnText.innerHTML = "Continue Reading.."; 
+            moreText.style.display = "none";
+          }
+        }
+    </script>
+
+    <!--   For opening form field   -->
+    <script>
+        function openForm() {
+            document.getElementById("form").style.display = "block";
+        }
+
+        function closeBtn(){
+            document.getElementById("form").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function submitBtn(){
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            let name = document.getElementById("authorName").value;
+            let title = document.getElementById("formTitle").value;
+            let content = document.getElementById("formContent").value;
+            let date = new Date();
+            let authorDet = month[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear() + " by " + name;
+
+            if(name == "" || title == "" || content == ""){
+               alert("Please fill all the details!");
+               return false;
+            }
+
+            document.getElementById("blogHead").innerHTML = title;
+            document.getElementById("blogAuthor").innerHTML = authorDet;
+            document.getElementById("blogContent").innerHTML = content;
+
+            document.getElementById("form").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
